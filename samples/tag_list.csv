@@ -1,0 +1,5 @@
+Tag_Name,Data_Type,Address,Description
+E_Stop_Active,BOOL,%I0.0,Emergency Stop Input (NC Contact)
+Safety_Reset_Ack,BOOL,%I0.1,Manual Safety Reset Pushbutton
+Conveyor_Motor_Out,BOOL,%Q0.0,Main Conveyor Motor Contactor Output
+Motor_Speed_Set,INT,%QW2.0,Analog Speed Reference to VFD (0-16384)

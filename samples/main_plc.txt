@@ -1,0 +1,15 @@
+PROGRAM Main_Line_Control
+VAR
+    Start_PB : BOOL; // Start Pushbutton
+    Stop_PB  : BOOL; // Stop Pushbutton
+END_VAR
+
+// CONVEYOR CONTROL RUN LOGIC
+IF Start_PB AND NOT Stop_PB THEN
+    Conveyor_Motor_Out := TRUE;
+ELSIF Stop_PB THEN
+    Conveyor_Motor_Out := FALSE;
+END_IF;
+
+// SPEED VALUE SCALING
+Motor_Speed_Set := 8192; // Run at 50% speed reference
